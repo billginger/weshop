@@ -1,0 +1,19 @@
+{
+	"name": "weshop-mall-frontend",
+	"version": "0.0.1",
+	"description": "WeShop Mall Frontend built on React",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/billginger/weshop.git"
+	},
+	"author": "Bill",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/billginger/weshop/issues"
+	},
+	"homepage": "https://github.com/billginger/weshop#readme"
+}
