@@ -1,10 +1,11 @@
 import React from 'react';
 import { TabBar } from 'antd-mobile';
+import Home from './pages/Home.jsx';
 
 const AppMain = () => (
 	<TabBar prerenderingSiblingsNumber={0}>
 		<TabBar.Item>
-			A
+			<Home />
 		</TabBar.Item>
 		<TabBar.Item>
 			B
