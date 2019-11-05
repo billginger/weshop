@@ -1,9 +1,10 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { TabBar } from 'antd-mobile';
 import Home from './pages/Home.jsx';
 
-const AppMain = () => (
-	<TabBar prerenderingSiblingsNumber={0}>
+const AppMain = ({ keyboardVisible }) => (
+	<TabBar prerenderingSiblingsNumber={0} hidden={keyboardVisible}>
 		<TabBar.Item>
 			<Home />
 		</TabBar.Item>
@@ -19,4 +20,8 @@ const AppMain = () => (
 	</TabBar>
 );
 
-export default AppMain;
+const mapStateToProps = state => ({
+	keyboardVisible: state.keyboardVisible
+});
+
+export default connect(mapStateToProps)(AppMain);

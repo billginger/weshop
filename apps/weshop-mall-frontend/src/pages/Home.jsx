@@ -1,8 +1,8 @@
 import React from 'react';
-import { InputItem } from 'antd-mobile';
+import MyInput from '../components/MyInput.jsx';
 
 const Home = () => (
-	<InputItem placeholder="Test">Test</InputItem>
+	<MyInput label="Test" />
 );
 
 export default Home;
