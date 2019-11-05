@@ -3,7 +3,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const vConsolePlugin = require('vconsole-webpack-plugin');
 
-module.exports = {
+module.exports = (env, argv) => ({
 	entry: {
 		'js/bundle': './src/App.jsx'
 	},
@@ -46,10 +46,10 @@ module.exports = {
 			template: './src/index.html'
 		}),
 		new vConsolePlugin({
-			enable: true
+			enable: !argv.p
 		})
 	],
 	devServer: {
 		host: '0.0.0.0'
 	}
-};
+});
